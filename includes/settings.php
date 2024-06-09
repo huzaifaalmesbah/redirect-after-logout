@@ -63,7 +63,7 @@ function wpral_register_settings() {
 
 	add_settings_field(
 		'wpral_use_safe_redirect',
-		__( 'Use Safe Redirect', 'redirect-after-logout' ),
+		__( 'Safe Redirect', 'redirect-after-logout' ),
 		'wpral_render_use_safe_redirect_field',
 		'wpral-redirect-settings',
 		'wpral_settings_section'
