@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Redirect After Logout
- * Description: Redirects the user to a custom URL after logging out.
+ * Description: Redirects the user to a custom URL after logging out of WordPress.
  * Author: Huzaifa Al Mesbah
  * Author URI: https://profiles.wordpress.org/huzaifaalmesbah/
  * Text Domain: redirect-after-logout
