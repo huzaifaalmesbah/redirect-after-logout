@@ -93,3 +93,4 @@ function wpral_render_use_safe_redirect_field() {
 	<p class="description"><?php esc_html_e( 'Check this box to make sure the redirect is safe and only goes to the same site. Uncheck if you want to allow redirects to any URL.', 'redirect-after-logout' ); ?></p>
 	<?php
 }
+?>
