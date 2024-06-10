@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-06-09T18:24:29+00:00\n"
+"POT-Creation-Date: 2024-06-10T01:46:23+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: redirect-after-logout\n"
@@ -58,4 +58,8 @@ msgstr ""
 
 #: includes/settings.php:93
 msgid "Check this box to make sure the redirect is safe and only goes to the same site. Uncheck if you want to allow redirects to any URL."
+msgstr ""
+
+#: redirect-after-logout.php:48
+msgid "Settings"
 msgstr ""
