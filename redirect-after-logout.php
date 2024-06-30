@@ -10,7 +10,7 @@
  * Requires at least: 5.6
  * Tested up to: 6.5
  * Requires PHP: 7.0
- * Version: 1.1
+ * Version: 1.0.1
  *
  * @package RedirectAfterLogout
  */
