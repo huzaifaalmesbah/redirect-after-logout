@@ -36,7 +36,7 @@ You can choose whether the redirect should be limited to your site (safe redirec
 
 == Changelog ==
 
-= 1.1 =
+= 1.0.1 =
 * Added settings page for customizing the redirect URL.
 * Added an option to choose whether the redirect should be limited to your site (safe redirect) or allow any URL.
 * Improved security and adherence to WordPress coding standards.
