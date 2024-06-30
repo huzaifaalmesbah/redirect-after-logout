@@ -1,5 +1,5 @@
 === Redirect After Logout ===
-Contributors: huzaifaalmesbah
+Contributors: huzaifaalmesbah, rejaulalomkhan
 Tags: logout, redirect, customization
 Requires at least: 5.6
 Tested up to: 6.5
@@ -19,6 +19,10 @@ This plugin redirects users to a custom URL after they log out of WordPress. The
 1. Upload the plugin files to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 3. Go to Settings > Logout Redirect to customize the redirect URL and redirection type.
+
+== Screenshots ==
+
+1. Redirect After Logout Admin Settings.
 
 == Frequently Asked Questions ==
 

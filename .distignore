@@ -1,0 +1,9 @@
+*.DS_Store
+vendor
+node_modules
+.gitingore
+composer.json
+composer.lock
+package-lock.json
+package.json
+phpcs.xml.distributed
