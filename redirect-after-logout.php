@@ -8,9 +8,9 @@
  * Domain Path: /languages
  * License: GPLv2 or later
  * Requires at least: 5.6
- * Tested up to: 6.5
+ * Tested up to: 6.6.1
  * Requires PHP: 7.0
- * Version: 1.0.1
+ * Version: 1.0.2
  *
  * @package RedirectAfterLogout
  */

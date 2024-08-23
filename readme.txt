@@ -2,9 +2,9 @@
 Contributors: huzaifaalmesbah, rejaulalomkhan
 Tags: logout, redirect, customization
 Requires at least: 5.6
-Tested up to: 6.5
+Tested up to: 6.6.1
 Requires PHP: 7.0
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,8 @@ You can change the redirect URL by going to Settings > Logout Redirect in the Wo
 You can choose whether the redirect should be limited to your site (safe redirect) or allow any URL by checking or unchecking the "Use Safe Redirect" checkbox in the settings page.
 
 == Changelog ==
+= 1.0.2 =
+* Version Update. 
 
 = 1.0.1 =
 * Added settings page for customizing the redirect URL.
