@@ -23,6 +23,7 @@ This plugin redirects users to a custom URL after they log out of WordPress. The
 == Screenshots ==
 
 1. Redirect After Logout Admin Settings.
+2. Redirect After Logout Safe Redirect.
 
 == Frequently Asked Questions ==
 
