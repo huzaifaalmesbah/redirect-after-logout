@@ -36,7 +36,7 @@ You can choose whether the redirect should be limited to your site (safe redirec
 
 == Changelog ==
 = 1.0.2 =
-* Version Update. 
+* Version Update (Tested up to).
 
 = 1.0.1 =
 * Added settings page for customizing the redirect URL.
