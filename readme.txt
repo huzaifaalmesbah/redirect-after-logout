@@ -2,7 +2,7 @@
 Contributors: huzaifaalmesbah, rejaulalomkhan
 Tags: logout, redirect, customization
 Requires at least: 5.6
-Tested up to: 6.6.1
+Tested up to: 6.6.2
 Requires PHP: 7.0
 Stable tag: 1.0.2
 License: GPLv2 or later
@@ -12,7 +12,7 @@ A simple plugin to redirect users to a custom URL after they log out of WordPres
 
 == Description ==
 
-[Live Demo](tastewp.org/plugins/redirect-after-logout/)
+[Live Demo](https://tastewp.org/plugins/redirect-after-logout/)
 
 This plugin redirects users to a custom URL after they log out of WordPress. The redirect URL can be customized via a settings page in the WordPress admin area. If the redirect URL is left empty, users will not be redirected. You can also choose whether the redirect should be limited to your site (safe redirect) or allow any URL.
 
