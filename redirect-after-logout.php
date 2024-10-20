@@ -10,7 +10,7 @@
  * Requires at least: 5.6
  * Tested up to: 6.6.1
  * Requires PHP: 7.0
- * Version: 1.0.2
+ * Version: 1.0.3
  *
  * @package RedirectAfterLogout
  */
@@ -35,8 +35,27 @@ function wpral_load_textdomain() {
 add_action( 'plugins_loaded', 'wpral_load_textdomain' );
 
 // Include the settings and functions files.
-require_once plugin_dir_path( __FILE__ ) . 'includes/settings.php';
-require_once plugin_dir_path( __FILE__ ) . 'includes/functions.php';
+require_once RAL_PLUGIN_PATH . 'includes/settings.php';
+require_once RAL_PLUGIN_PATH . 'includes/functions.php';
+
+/**
+ * Initialize the plugin tracker
+ *
+ * @return void
+ */
+function appsero_init_tracker_redirect_after_logout() {
+
+	if ( ! class_exists( 'Appsero\Client' ) ) {
+		require_once RAL_PLUGIN_PATH . '/includes/appsero/src/Client.php';
+	}
+
+	$client = new Appsero\Client( '5fbb59e5-0cf8-4c0a-948c-afd8f19cd12d', 'Redirect After Logout', __FILE__ );
+
+	// Active insights
+	$client->insights()->init();
+}
+
+appsero_init_tracker_redirect_after_logout();
 
 /**
  * Adds a link to the plugin settings page to the list of links.
