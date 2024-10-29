@@ -1,10 +1,10 @@
-=== Redirect After Logout ===
+=== Redirect After Logout – Customizable logout redirects for WordPress users.===
 Contributors: huzaifaalmesbah, rejaulalomkhan  
 Tags: logout, redirect, redirect url, custom redirect, wordpress-logout
 Requires at least: 5.6  
 Tested up to: 6.6.2  
-Requires PHP: 7.0  
-Stable tag: 1.0.3  
+Requires PHP: 7.0
+Stable tag: 1.0.4
 License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -129,13 +129,6 @@ No, the plugin currently does not include a shortcode. However, it works seamles
 1. Admin settings page to customize redirect URL and enable safe redirect.
 2. Safe redirect option checkbox.
 
-== Privacy Policy ==
-Redirect After Logout uses [Appsero](https://appsero.com) SDK to collect some telemetry data upon the user's confirmation. This helps us troubleshoot problems faster & make product improvements.
-
-Appsero SDK **does not gather any data by default.** The SDK only starts gathering basic telemetry data **when a user allows it via the admin notice**. We collect the data to ensure a great user experience for all our users.
-
-Learn more about how [Appsero collects and uses this data](https://appsero.com/privacy-policy/).
-
 == Check out our other Plugins ==
 
 - **[Smart Password Protect](https://wordpress.org/plugins/smart-password-protect/)** - Secure your WordPress site with password protection and IP whitelisting.
@@ -145,6 +138,11 @@ Learn more about how [Appsero collects and uses this data](https://appsero.com/p
 - **[User First Kit](https://wordpress.org/plugins/user-first-kit/)** - Enhance your site's user experience with a toolkit designed to prioritize user engagement and interaction.
 
 == Changelog ==
+
+= 1.0.4 =
+* Removed Appsero SDK.
+* Removed composer.json from production.
+
 = 1.0.3 =
 * Integrated Appsero SDK for optional telemetry data collection.
 * Organized and updated the readme file for better clarity and structure.

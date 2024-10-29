@@ -3,14 +3,12 @@
  * Plugin Name: Redirect After Logout
  * Description: Redirects the user to a custom URL after logging out of WordPress.
  * Author: Huzaifa Al Mesbah
- * Author URI: https://profiles.wordpress.org/huzaifaalmesbah/
+ * Author URI: https://www.linkedin.com/in/huzaifaalmesbah
  * Text Domain: redirect-after-logout
  * Domain Path: /languages
  * License: GPLv2 or later
- * Requires at least: 5.6
- * Tested up to: 6.6.1
- * Requires PHP: 7.0
- * Version: 1.0.3
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Version: 1.0.4
  *
  * @package RedirectAfterLogout
  */
@@ -37,25 +35,6 @@ add_action( 'plugins_loaded', 'wpral_load_textdomain' );
 // Include the settings and functions files.
 require_once RAL_PLUGIN_PATH . 'includes/settings.php';
 require_once RAL_PLUGIN_PATH . 'includes/functions.php';
-
-/**
- * Initialize the plugin tracker
- *
- * @return void
- */
-function appsero_init_tracker_redirect_after_logout() {
-
-	if ( ! class_exists( 'Appsero\Client' ) ) {
-		require_once RAL_PLUGIN_PATH . '/includes/appsero/src/Client.php';
-	}
-
-	$client = new Appsero\Client( '5fbb59e5-0cf8-4c0a-948c-afd8f19cd12d', 'Redirect After Logout', __FILE__ );
-
-	// Active insights
-	$client->insights()->init();
-}
-
-appsero_init_tracker_redirect_after_logout();
 
 /**
  * Adds a link to the plugin settings page to the list of links.
