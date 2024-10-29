@@ -1,4 +1,4 @@
-=== Redirect After Logout – Customizable logout redirects for WordPress users.===
+=== Redirect After Logout – Customizable logout redirects for WordPress users ===
 Contributors: huzaifaalmesbah, rejaulalomkhan  
 Tags: logout, redirect, redirect url, custom redirect, wordpress-logout
 Requires at least: 5.6  
