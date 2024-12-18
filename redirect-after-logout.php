@@ -8,7 +8,7 @@
  * Domain Path: /languages
  * License: GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
- * Version: 1.0.4
+ * Version: 1.0.5
  *
  * @package RedirectAfterLogout
  */
@@ -30,7 +30,7 @@ function wpral_load_textdomain() {
 	load_plugin_textdomain( 'redirect-after-logout', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 }
 
-add_action( 'plugins_loaded', 'wpral_load_textdomain' );
+add_action( 'init', 'wpral_load_textdomain' );
 
 // Include the settings and functions files.
 require_once RAL_PLUGIN_PATH . 'includes/settings.php';

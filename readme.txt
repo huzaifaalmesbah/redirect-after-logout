@@ -2,9 +2,9 @@
 Contributors: huzaifaalmesbah, rejaulalomkhan  
 Tags: logout, redirect, redirect url, custom redirect, wordpress-logout
 Requires at least: 5.6  
-Tested up to: 6.6.2  
+Tested up to: 6.7.1
 Requires PHP: 7.0
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -138,6 +138,10 @@ No, the plugin currently does not include a shortcode. However, it works seamles
 - **[User First Kit](https://wordpress.org/plugins/user-first-kit/)** - Enhance your site's user experience with a toolkit designed to prioritize user engagement and interaction.
 
 == Changelog ==
+
+= 1.0.5 =
+* Improved translation loading reliability
+* Fixed internationalization loading issues
 
 = 1.0.4 =
 * Removed Appsero SDK.
