@@ -8,7 +8,7 @@
  * Domain Path: /languages
  * License: GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
- * Version: 1.0.5
+ * Version: 1.0.6
  *
  * @package RedirectAfterLogout
  */
@@ -37,15 +37,25 @@ require_once RAL_PLUGIN_PATH . 'includes/settings.php';
 require_once RAL_PLUGIN_PATH . 'includes/functions.php';
 
 /**
- * Adds a link to the plugin settings page to the list of links.
+ * Adds a settings link to the plugin's action links on the plugins page.
  *
- * @param array $links An array of links.
- * @return array The modified array of links.
+ * @param array $links Array of plugin action links.
+ * @return array Modified array of plugin action links.
  */
 function wpral_add_plugin_settings_link( $links ) {
-	$settings_link = '<a href="' . admin_url( 'options-general.php?page=wpral-redirect-settings' ) . '">' . esc_html__( 'Settings', 'redirect-after-logout' ) . '</a>';
-	array_push( $links, $settings_link );
+	if ( ! is_array( $links ) ) {
+		$links = array();
+	}
+	
+	$settings_link = sprintf(
+		'<a href="%s">%s</a>',
+		esc_url( admin_url( 'options-general.php?page=wpral-redirect-settings' ) ),
+		esc_html__( 'Settings', 'redirect-after-logout' )
+	);
+	
+	array_unshift( $links, $settings_link ); // Add settings first in the list
+	
 	return $links;
 }
 
-add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'wpral_add_plugin_settings_link' );
+add_filter( 'plugin_action_links_' . RAL_PLUGIN_BASENAME, 'wpral_add_plugin_settings_link' );
