@@ -1,10 +1,10 @@
-=== Redirect After Logout ===
+=== Smart Logout Redirect ===
 Contributors: huzaifaalmesbah, rejaulalomkhan  
 Tags: logout, redirect, redirect url, custom redirect, wordpress-logout
 Requires at least: 5.6  
-Tested up to: 6.7.1
-Requires PHP: 7.0
-Stable tag: 1.0.6
+Tested up to: 6.9
+Requires PHP: 7.4
+Stable tag: 2.0.0
 License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -12,20 +12,19 @@ A simple plugin to redirect users to a custom URL after they log out of WordPres
 
 == Description ==
 
-[Live Demo](https://tastewp.org/plugins/redirect-after-logout/)
+Smart Logout Redirect is a lightweight WordPress plugin that allows you to redirect users to a custom URL, the home page, or the current page after they log out.
 
-The **Redirect After Logout** plugin allows WordPress site admins to define a custom URL to redirect users to after they log out. Users can be redirected to internal or external URLs, with the option to enable a safe redirect that limits redirection to your domain for added security.
+**Features:**
 
-**Key Features:**
-- Customizable redirect URL after logout.
-- Safe redirect option to limit redirection to URLs within your site.
-- Easy settings page to manage redirection.
-- No redirection if the URL is left empty.
-- Translation support for multiple languages.
+*   **Custom Redirect URL:** Redirect users to any specific URL.
+*   **Home Page Redirect:** Easily redirect users to your site's home page.
+*   **Current Page Redirect:** Redirect users back to the page they were on before logging out.
+*   **Role-Based Redirection:** Set different redirect URLs for different user roles (e.g., Administrators to one page, Subscribers to another).
+*   **Safe Redirect:** Option to ensure redirects are safe and within the same domain.
 
-== Why Choose Redirect After Logout? ==
-
-The **Redirect After Logout** plugin offers a simple yet powerful solution to control where users are redirected after logging out of your WordPress site. Here’s why it stands out:
+== Why Choose Smart Logout Redirect? ==
+ 
+The **Smart Logout Redirect** plugin offers a simple yet powerful solution to control where users are redirected after logging out of your WordPress site. Here’s why it stands out:
 
 1. **Customizable Redirection:**
    You have full control over where users land after they log out. Whether it’s a custom thank-you page, the homepage, or an external URL, you decide the destination.
@@ -33,8 +32,8 @@ The **Redirect After Logout** plugin offers a simple yet powerful solution to co
 2. **Safe Redirection Option:**
    For added security, you can enable the **Safe Redirect** option, ensuring users are only redirected to URLs within your website domain, protecting them from being sent to harmful or unauthorized sites.
 
-3. **Easy to Use:**
-   The plugin offers an intuitive settings page in the WordPress admin area where you can easily set up your custom redirect URL without any coding knowledge required.
+3. **Modern & Easy to Use:**
+   The plugin features a modern, React-based settings page with a searchable page selector, making it incredibly easy to configure your redirects without any coding knowledge.
 
 4. **No Redirect if URL is Empty:**
    If you don’t want users to be redirected, simply leave the URL field empty. The plugin will ensure they remain on the default WordPress logout page.
@@ -138,6 +137,16 @@ No, the plugin currently does not include a shortcode. However, it works seamles
 - **[User First Kit](https://wordpress.org/plugins/user-first-kit/)** - Enhance your site's user experience with a toolkit designed to prioritize user engagement and interaction.
 
 == Changelog ==
+
+= 2.0.0 =
+*   Feature: Modern React-based settings page for a better user experience.
+*   Feature: Added role-based redirection.
+*   Feature: Added options to redirect to Home Page or Current Page.
+*   Feature: Searchable page selector for easier configuration.
+*   Feature: New sidebar layout with "General" and "Role-Based" tabs.
+*   Feature: Background data loading for improved performance.
+*   Fix: Resolved deprecation warnings for WordPress components.
+*   Compatibility: Tested up to WordPress 6.9.
 
 = 1.0.6 =
 * Added translation support for better internationalization
