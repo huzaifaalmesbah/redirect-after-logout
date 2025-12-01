@@ -4,7 +4,7 @@ Tags: logout, redirect, redirect url, custom redirect, wordpress-logout
 Requires at least: 5.6  
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.0.0
+Stable tag: 1.0.6
 License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -12,43 +12,36 @@ A simple plugin to redirect users to a custom URL after they log out of WordPres
 
 == Description ==
 
-Smart Logout Redirect is a lightweight WordPress plugin that allows you to redirect users to a custom URL, the home page, or the current page after they log out.
+Smart Logout Redirect is the ultimate solution for managing user redirections after logout in WordPress. Whether you want to redirect users to a custom URL, the home page, or the page they were viewing, this plugin handles it all with ease.
 
-**Features:**
+Now featuring a **modern React-based interface**, **Role-Based Redirection**, and a **Searchable Page Selector**, it gives you complete control over the logout experience for different user types (Admins, Subscribers, Customers, etc.).
 
-*   **Custom Redirect URL:** Redirect users to any specific URL.
-*   **Home Page Redirect:** Easily redirect users to your site's home page.
-*   **Current Page Redirect:** Redirect users back to the page they were on before logging out.
-*   **Role-Based Redirection:** Set different redirect URLs for different user roles (e.g., Administrators to one page, Subscribers to another).
-*   **Safe Redirect:** Option to ensure redirects are safe and within the same domain.
+**Key Features:**
+
+*   **Role-Based Redirection:** Set unique redirect URLs for specific user roles (e.g., redirect Admins to the dashboard, Subscribers to a custom page, and Customers to the shop).
+*   **Flexible Redirect Options:** Choose between:
+    *   **Home Page:** Redirect users to your site's homepage.
+    *   **Current Page:** Keep users on the same page they were viewing.
+    *   **Custom URL:** Enter any internal or external URL.
+    *   **Select Page:** Easily search and select any existing page from your site.
+*   **Modern Settings UI:** A clean, fast, and user-friendly interface built with React.
+*   **Safe Redirect:** Optional security feature to restrict redirects to your own domain only.
+*   **Lightweight & Fast:** Optimized for performance with background data loading.
+*   **Translation Ready:** Fully compatible with translation plugins.
 
 == Why Choose Smart Logout Redirect? ==
- 
-The **Smart Logout Redirect** plugin offers a simple yet powerful solution to control where users are redirected after logging out of your WordPress site. Here’s why it stands out:
 
-1. **Customizable Redirection:**
-   You have full control over where users land after they log out. Whether it’s a custom thank-you page, the homepage, or an external URL, you decide the destination.
+1.  **Complete Control:**
+    Don't settle for default WordPress behavior. Customize the logout flow to enhance user experience, guide users to special offers, or simply say "Goodbye" on a custom page.
 
-2. **Safe Redirection Option:**
-   For added security, you can enable the **Safe Redirect** option, ensuring users are only redirected to URLs within your website domain, protecting them from being sent to harmful or unauthorized sites.
+2.  **Role-Specific Logic:**
+    Perfect for membership sites, WooCommerce stores, or multi-author blogs. tailored the experience based on who is logging out.
 
-3. **Modern & Easy to Use:**
-   The plugin features a modern, React-based settings page with a searchable page selector, making it incredibly easy to configure your redirects without any coding knowledge.
+3.  **Easy Configuration:**
+    No coding needed! The intuitive sidebar layout and searchable dropdowns make setup a breeze.
 
-4. **No Redirect if URL is Empty:**
-   If you don’t want users to be redirected, simply leave the URL field empty. The plugin will ensure they remain on the default WordPress logout page.
-
-5. **Translation Ready:**
-   The plugin is fully translation-ready, making it accessible to a global audience. You can translate it into multiple languages with ease.
-
-6. **Lightweight and Efficient:**
-   The plugin is built to be lightweight, ensuring it doesn’t slow down your site or affect your site’s performance.
-
-7. **Supports All Themes:**
-   Whether you're using a custom theme or a popular WordPress theme, this plugin will work seamlessly without conflicts.
-
-8. **Regular Updates and Support:**
-   We are committed to keeping the plugin updated and compatible with the latest version of WordPress. Our support team is always available to help with any issues or questions you may have.
+4.  **Secure & Reliable:**
+    Built with security in mind, including a "Safe Redirect" option to prevent open redirect vulnerabilities.
 
 == Installation ==
 
@@ -69,64 +62,30 @@ The **Smart Logout Redirect** plugin offers a simple yet powerful solution to co
 
 = Plugin Configuration: =
 
-1. Go to **Settings > Logout Redirect** in your WordPress dashboard.
-2. Enter the desired URL for redirection after logout.
-3. (Optional) Check the **Safe Redirect** box to restrict redirection to your site domain.
-4. Save changes.
-
-== Upgrade Notice ==
-
-= Upgrading from an Older Version: =
-
-1. Go to the **Plugins** section in your WordPress dashboard.
-2. If a new version of the plugin is available, click the **Update Now** button.
-3. After the update is complete, review the settings at **Settings > Logout Redirect** to ensure the redirect URL and options are correctly configured.
+1.  Navigate to **Settings > Logout Redirect**.
+2.  **General Settings:** Choose your default redirect behavior (Home, Current Page, or Custom).
+3.  **Role-Based Redirection:** Switch to the "Role-Based Redirection" tab to set specific rules for each user role.
+4.  Click **Save Settings**.
 
 == Frequently Asked Questions ==
 
-= How do I change the redirect URL? =
+= How does Role-Based Redirection work? =
+In the "Role-Based Redirection" tab, you will see a list of all user roles on your site. You can assign a specific redirect URL or page for each role. If a role has no specific rule set, the "General Settings" rule will apply.
 
-Navigate to **Settings > Logout Redirect** in the WordPress admin area, and enter your custom redirect URL. Leave the field empty to disable redirection.
+= Can I redirect to an external website? =
+Yes! Select "Custom Redirect" and enter the full URL (e.g., `https://google.com`). If "Safe Redirect" is enabled, external redirects will be blocked for security.
 
-= Can I enable redirection only within my domain? =
+= What happens if I leave the settings blank? =
+If no redirect is configured, users will see the default WordPress logout screen.
 
-Yes, check the **Safe Redirect** option in the settings to ensure users are redirected to URLs within your site only.
-
-= Can I leave the redirect URL blank? =  
-Yes, if you leave the redirect URL blank, users will not be redirected to any page after logging out. They will remain on the default WordPress logout page.
-
-= Can I redirect users to an external URL? =  
-Yes, you can redirect users to any external URL by entering it in the settings. However, if you want to restrict the redirection to your domain, enable the **Safe Redirect** option.
-
-= Does the plugin work with custom login URLs? =  
-Yes, the plugin works with custom login/logout URLs created by other plugins or custom development, as long as the logout action is recognized by WordPress.
-
-= How can I translate this plugin into another language? =  
-This plugin is translation-ready. You can use any translation plugin or software (e.g., Loco Translate or Poedit) to translate it into your preferred language.
-
-= Does this plugin collect any data? =
-
-The plugin integrates with **Appsero SDK** for telemetry data collection, but only after the user grants permission. Data collection is completely optional and no data is collected by default.
-
-= Can I disable the Appsero telemetry data collection? =  
-Yes, data collection is completely optional and only starts when a user explicitly grants permission. If you choose not to allow it, no telemetry data will be collected.
-
-= Will this plugin slow down my site? =  
-No, the **Redirect After Logout** plugin is lightweight and optimized to run efficiently without affecting your site’s performance.
-
-= How do I uninstall the plugin? =  
-To uninstall the plugin, simply go to **Plugins > Installed Plugins**, find **Redirect After Logout**, and click **Deactivate**. You can then click **Delete** to remove it from your site.
-
-= Can I copy and paste the redirect URL? =  
-Yes, you can easily copy and paste any URL into the **Redirect URL** field in the plugin settings.
-
-= Is there a shortcode available to trigger logout? =  
-No, the plugin currently does not include a shortcode. However, it works seamlessly with the default WordPress logout action.
+= Is it compatible with WooCommerce? =
+Yes, it works perfectly with WooCommerce. You can redirect "Customer" and "Shop Manager" roles to specific shop pages or their account dashboard.
 
 == Screenshots ==
 
-1. Admin settings page to customize redirect URL and enable safe redirect.
-2. Safe redirect option checkbox.
+1.  **General Settings:** Modern UI to configure default redirect behavior.
+2.  **Role-Based Settings:** Easily assign different redirect URLs for each user role.
+3.  **Searchable Page Selector:** Quickly find and select pages for redirection.
 
 == Check out our other Plugins ==
 
@@ -145,7 +104,6 @@ No, the plugin currently does not include a shortcode. However, it works seamles
 *   Feature: Searchable page selector for easier configuration.
 *   Feature: New sidebar layout with "General" and "Role-Based" tabs.
 *   Feature: Background data loading for improved performance.
-*   Fix: Resolved deprecation warnings for WordPress components.
 *   Compatibility: Tested up to WordPress 6.9.
 
 = 1.0.6 =

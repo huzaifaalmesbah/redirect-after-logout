@@ -7,7 +7,7 @@
  * Text Domain: redirect-after-logout
  * License: GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
- * Version: 2.0.0
+ * Version: 2.0.0-beta1
  *
  * @package RedirectAfterLogout
  */
