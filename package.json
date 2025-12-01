@@ -2,7 +2,7 @@
   "scripts": {
     "build": "wp-scripts build",
     "start": "wp-scripts start",
-    "bundle": "dir-archiver --src . --dest ../redirect-after-logout.zip --exclude .DS_Store .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json phpcs.xml.dist src"
+    "bundle": "npm run build && zip -r ../redirect-after-logout.zip . -x \"src/*\" \"node_modules/*\" \".git/*\" \".github/*\" \".vscode/*\" \"*.zip\" \"package.json\" \"package-lock.json\" \"webpack.config.js\" \".gitignore\" \".distignore\" \".gitattributes\" \"README.md\" \"bin/*\" \"tests/*\" \".DS_Store\" \".editorconfig\" \".eslintignore\" \".eslintrc\" \".babelrc\" \"phpunit.xml\" \"phpcs.xml\""
   },
   "devDependencies": {
     "@wordpress/scripts": "^26.0.0",
