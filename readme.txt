@@ -1,4 +1,4 @@
-=== Smart Logout Redirect ===
+=== Redirect After Logout ===
 Contributors: huzaifaalmesbah, rejaulalomkhan  
 Tags: logout, redirect, redirect url, custom redirect, wordpress-logout
 Requires at least: 5.6  
