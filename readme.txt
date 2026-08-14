@@ -2,7 +2,7 @@
 Contributors: huzaifaalmesbah, rejaulalomkhan  
 Tags: logout, redirect, redirect url, custom redirect, wordpress-logout
 Requires at least: 5.6  
-Tested up to: 6.9
+Tested up to: 7.1
 Requires PHP: 7.4
 Stable tag: 2.0.0
 License: GPLv2 or later  
@@ -104,7 +104,7 @@ Yes, it works perfectly with WooCommerce. You can redirect "Customer" and "Shop 
 *   Feature: Searchable page selector for easier configuration.
 *   Feature: New sidebar layout with "General" and "Role-Based" tabs.
 *   Feature: Background data loading for improved performance.
-*   Compatibility: Tested up to WordPress 6.9.
+*   Compatibility: Tested up to WordPress 7.1.
 
 = 1.0.6 =
 * Added translation support for better internationalization
