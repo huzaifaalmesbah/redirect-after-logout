@@ -1,4 +1,4 @@
-=== Redirect After Logout ===
+=== Smart Logout Redirect ===
 Contributors: huzaifaalmesbah, rejaulalomkhan  
 Tags: logout, redirect, redirect url, custom redirect, wordpress-logout
 Requires at least: 5.6  
@@ -49,13 +49,13 @@ Now featuring a **modern React-based interface**, **Role-Based Redirection**, an
 
 1. Go to the WordPress dashboard.
 2. Navigate to **Plugins > Add New**.
-3. Search for "Redirect After Logout".
+3. Search for "Smart Logout Redirect".
 4. Click on the **Install** button.
 5. Activate the plugin after installation.
 
 = Installation via Zip File: =
 
-1. Download the **Redirect After Logout** plugin zip file.
+1. Download the **Smart Logout Redirect** plugin zip file.
 2. Go to **Plugins > Add New > Upload Plugin**.
 3. Upload `redirect-after-logout.zip` and click **Install**.
 4. Activate the plugin once installation is complete.
@@ -91,7 +91,7 @@ Yes, it works perfectly with WooCommerce. You can redirect "Customer" and "Shop 
 
 - **[Smart Password Protect](https://wordpress.org/plugins/smart-password-protect/)** - Secure your WordPress site with password protection and IP whitelisting.
 - **[Random Quote](https://wordpress.org/plugins/random-quote/)** - Display a random quote on your site to inspire visitors.
-- **[Redirect After Logout](https://wordpress.org/plugins/redirect-after-logout/)** - Redirect users to a custom page after logging out for enhanced user experience.
+- **[Smart Logout Redirect](https://wordpress.org/plugins/redirect-after-logout/)** - Redirect users to a custom page after logging out for enhanced user experience.
 - **[Product Spotlight Badge](https://wordpress.org/plugins/product-spotlight-badge/)** - Highlight special products with a customizable spotlight badge on your WooCommerce store.
 - **[User First Kit](https://wordpress.org/plugins/user-first-kit/)** - Enhance your site's user experience with a toolkit designed to prioritize user engagement and interaction.
 
