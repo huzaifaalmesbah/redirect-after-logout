@@ -80,10 +80,10 @@ class Redirect {
 
 			if ( $use_safe_redirect ) {
 				// Use wp_safe_redirect() to ensure safe redirection.
-				wp_safe_redirect( esc_url( $redirect_url ) );
+				wp_safe_redirect( esc_url_raw( $redirect_url ) );
 			} else {
 				// Use wp_redirect() for normal redirection.
-				wp_redirect( esc_url( $redirect_url ) );
+				wp_redirect( esc_url_raw( $redirect_url ) );
 			}
 			exit();
 		}
