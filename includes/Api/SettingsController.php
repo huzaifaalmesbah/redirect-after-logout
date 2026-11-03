@@ -117,7 +117,7 @@ class SettingsController {
 		}
 
 		if ( isset( $input['use_safe_redirect'] ) ) {
-			$sanitized_input['use_safe_redirect'] = true;
+			$sanitized_input['use_safe_redirect'] = rest_sanitize_boolean( $input['use_safe_redirect'] );
 		} else {
 			$sanitized_input['use_safe_redirect'] = false;
 		}
